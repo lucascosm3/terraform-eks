@@ -5,4 +5,5 @@ repos:
       - id: terraform_fmt
         args:
           - --args=-recursive
+          - --hook-config=--parallelism-ci-cpu-cores=2
       - id: terraform_validate
