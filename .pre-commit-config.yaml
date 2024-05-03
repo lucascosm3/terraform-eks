@@ -7,3 +7,6 @@ repos:
           - --args=-recursive
           - --hook-config=--parallelism-ci-cpu-cores=2
       - id: terraform_validate
+      - id: terraform_docs
+        args:
+          - --args=--output-file README.md
